@@ -1,15 +1,15 @@
-name: 'CID/X Setup'
-description: 'Installs the binaries for usage in subsequent actions.'
+name: CID/X Setup
+description: Installs the binaries for usage in subsequent actions
 inputs:
   version:
-    description: 'Version'
+    description: Version
     required: true
-    default: 'latest'
+    default: latest
 runs:
   using: "composite"
   steps:
-    - run: $GITHUB_ACTION_PATH/setup.sh
+    - run: ${GITHUB_ACTION_PATH}/setup.sh "${{ inputs.version }}"
       shell: bash
 branding:
-  icon: 'code'  
-  color: 'orange'
+  icon: code
+  color: orange

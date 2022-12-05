@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # input
-CID_VERSION=${INPUT_VERSION:=latest}
+CID_VERSION=$1
 
 # installation
 echo "::group::Installation"
@@ -22,11 +22,9 @@ echo "::endgroup::"
 # output
 echo "::group::Output"
 
-# - env
 echo "Setting: CID_VERSION=$CID_VERSION"
 echo "CID_VERSION=$CID_VERSION" >> $GITHUB_ENV
 
-# - path
 echo "Adding Path: $RUNNER_TOOL_CACHE/cid/bin"
 echo "$RUNNER_TOOL_CACHE/cid/bin" >> $GITHUB_PATH
 
