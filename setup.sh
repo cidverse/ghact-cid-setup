@@ -19,6 +19,11 @@ echo "::group::Test"
 cid version
 echo "::endgroup::"
 
+# catalog
+echo "::group::Catalog"
+cid catalog update
+echo "::endgroup::"
+
 # output
 echo "::group::Output"
 
