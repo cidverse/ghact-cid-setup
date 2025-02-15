@@ -4,7 +4,7 @@ inputs:
   version:
     description: Version
     required: true
-    default: v0.4.1
+    default: latest
 runs:
   using: "composite"
   steps:
