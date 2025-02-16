@@ -1,5 +1,5 @@
 name: CID/X Setup
-description: Installs the binaries for usage in subsequent actions
+description: Installs the CID/X CLI
 inputs:
   version:
     description: Version
